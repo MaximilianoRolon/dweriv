@@ -11,7 +11,7 @@
     "url": "git+https://github.com/MaximilianoRolon/dweriv.git"
   },
   "dependencies": {
-    "bcryptjs": "*",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
@@ -21,11 +21,13 @@
     "express-session": "^1.15.5",
     "express-validator": "^3.2.1",
     "jquery": "^3.2.1",
+    "jsdom": "^11.1.0",
     "mongodb": "^2.2.31",
     "mongoose": "^4.11.7",
     "passport": "^0.4.0",
     "passport-http": "*",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.12.3"
   },
   "author": "Maximiliano Rolon",
   "license": "ISC",

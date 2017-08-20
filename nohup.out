@@ -1,0 +1,23 @@
+Sun, 20 Aug 2017 04:07:52 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at dweriv.js:38:9
+(node:31775) DeprecationWarning: `open()` is deprecated in mongoose >= 4.11.0, use `openUri()` instead, or set the `useMongoClient` option if using `connect()` or `createConnection()`. See http://mongoosejs.com/docs/connections.html#use-mongo-client
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8080
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at Server._listen2 (net.js:1258:14)
+    at listen (net.js:1294:10)
+    at Server.listen (net.js:1390:5)
+    at EventEmitter.listen (/usr/lib/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/dweriv/dweriv.js:83:5)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.runMain (module.js:604:10)
+    at run (bootstrap_node.js:389:7)
+    at startup (bootstrap_node.js:149:9)
+    at bootstrap_node.js:504:3
