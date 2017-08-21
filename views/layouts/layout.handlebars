@@ -55,6 +55,11 @@
           {{/if}}     
 
         	{{{body}}}
+
+          {{# if user}}
+            <p><strong>Datos acuales en la DB del usuario actual:</strong></p>
+            {{user}}
+          {{/if}}
           
         </div>
       </div>

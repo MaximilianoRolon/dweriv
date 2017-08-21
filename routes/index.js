@@ -1,8 +1,10 @@
 var express = require('express');
+var User = require('../models/user');
 var router = express.Router();
 
 // Get Homepage
 router.get('/',checkAuthentication, function(req, res){
+    // console.log(User.getUserByUsername(""));
 	if(req.user){
 		res.render('index');
 	}else{
@@ -15,7 +17,7 @@ function checkAuthentication(req,res,next){
         //if user is looged in, req.isAuthenticated() will return true 
         next();
     } else{
-    	req.flash('error_msg','No has iniciado sesion en dweriv');
+    	req.flash('error_msg','Inicia sesion en dweriv para ingresar a esta pagina');
         res.redirect('/users/login');
     }
 }
